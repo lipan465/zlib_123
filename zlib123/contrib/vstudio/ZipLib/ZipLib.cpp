@@ -112,7 +112,7 @@ bool AddfiletoZip(zipFile zfile, const char* fileNameinZip, const char* srcfile,
 	memset(sznewfileName, 0x00, sizeof(sznewfileName));
 	strcat_s(sznewfileName, fileNameinZip);
 
-	if (0 == strlen(srcfile))
+	if (FILE_ATTRIBUTE_DIRECTORY == (zinfo.external_fa & FILE_ATTRIBUTE_DIRECTORY))
 	{
 		strcat_s(sznewfileName, "\\");
 	}
