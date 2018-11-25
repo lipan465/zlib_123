@@ -170,7 +170,7 @@
     <ClCompile Include="ZipLib.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\vc8\zlibstat.vcxproj">
+    <ProjectReference Include="..\vc10\zlibstat.vcxproj">
       <Project>{745dec58-ebb3-47a9-a9b8-4c6627c01bf8}</Project>
     </ProjectReference>
   </ItemGroup>

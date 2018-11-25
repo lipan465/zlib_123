@@ -209,6 +209,7 @@ BOOL ListFileToZip(const char* lpszSrcPath,const char* lpszZipPath,zipFile zf,co
 			if(false == AddfiletoZip(zf,zipPath,srcPath,lpszPassword)) return false;
 		}
 	}
+	FindClose(file);
 	return TRUE;
 }
 
